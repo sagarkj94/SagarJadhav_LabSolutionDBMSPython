@@ -452,7 +452,7 @@ output_df
 
 # ### Q11) Display all the Customers left outer join with  the orders
 
-# In[134]:
+# In[135]:
 
 
 Query11="""select * from customer left outer join `orders` on customer.cus_id=`orders` .cus_id;"""
@@ -465,5 +465,11 @@ output_df
 
 
 # **NOTE:** Always close an open connection once you are done with the database operations
+
+# In[136]:
+
+
+connection.close()
+
 
 # ## Happy Learning:)
